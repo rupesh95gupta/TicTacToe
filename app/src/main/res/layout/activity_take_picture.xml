@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/container1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:background="@drawable/animation_list"
+    tools:context=".Take_picture">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+<TextView
+    android:id="@+id/tv_title1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Player 1"
+    android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/takepic1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title1"
+        android:text="Take Picture"
+        android:textSize="20sp"/>
+            <Button
+                android:id="@+id/photo_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/takepic1"
+                android:background="@drawable/plus"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/captured_photo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@id/takepic1"
+        android:layout_marginLeft="20dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+    <TextView
+        android:id="@+id/tv_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 2"
+        android:layout_below="@id/photo_button"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/takepic2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take Picture"
+        android:layout_below="@id/tv_title2"
+        android:textSize="15sp"
+        />
+            <Button
+                android:id="@+id/photo_button1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/plus"
+                android:layout_below="@id/captured_photo1"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/captured_photo1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@id/takepic2"
+        android:layout_below="@id/photo_button"/>
+        </LinearLayout>
+    </LinearLayout>
+<Button
+    android:id="@+id/next"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Lets Go!!!"
+    android:layout_marginTop="50dp"
+    android:paddingLeft="20dp"
+    android:textAllCaps="true"
+    android:paddingRight="20dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    />
+
+
+
+</LinearLayout>
